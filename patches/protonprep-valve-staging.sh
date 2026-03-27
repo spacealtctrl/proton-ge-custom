@@ -327,6 +327,7 @@ apply_all_in_dir() {
     echo "WINE: --CUSTOM-- add WINE_HOSTBLOCK envvar to allow working around some problematic anticheats (notably eac)"
     apply_patch "../patches/proton/wine_host_block_envvar.patch"
 
+    # https://github.com/GloriousEggroll/proton-ge-custom/pull/483
     echo "WINE: -CUSTOM- Dynamically relocate .exes, improving compatibility with modding / hooking tools"
     apply_patch "../patches/proton/0001-server-Dynamically-relocate-.exes-by-default-too.patch"
 
